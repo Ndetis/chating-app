@@ -96,6 +96,10 @@ body{
    transition: 0.5s ease;
    padding: 20px 15px;
    vertical-align: baseline;
+   color: var(--secondary-text-color);
+    flex: 1 1 auto;
+    padding: .0625rem .4375rem .0625rem .5625rem;
+
 }
 .disc:hover{
     color: #74b9ff;
@@ -107,10 +111,7 @@ body{
     background: #ccc;
     overflow: hidden;
 }
-.disc .user-photo img {
-    width: 100%;
-    height: 100%;
-}
+
 .chat .user-photo {
     width: 60px;
     height: 60px;
@@ -171,6 +172,7 @@ textarea:focus{
 }
 button{
     border: 0;
+    background: transparent;
 }
 .menu{
     height: 15%;
@@ -280,7 +282,25 @@ a{
    .conversation {
        display: none;
    }
+ }
+ @media only screen and (min-width: 721px){
+#auth-pages .tabs-container:before,#auth-pages .tabs-container:after{
+    content:" ";
+    position:absolute;
+    width:100%;
+    left:-100%;
+    top:0;
+    right:0;
+    bottom:0;
+    background:#fff;
+    background:var(--surface-color);
+    z-index:1
+}
+ #auth-pages .tabs-container:after{
+     left:100%
     }
+}
+/*# sourceMappingURL=style-desktop.9d7b485ed526720a3aad.css.map*/
  /*    @media screen and (max-width : 1400px ) {
      .friend .identifier{
         font-size: 15px;
