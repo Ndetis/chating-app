@@ -96,10 +96,6 @@ body{
    transition: 0.5s ease;
    padding: 20px 15px;
    vertical-align: baseline;
-   color: var(--secondary-text-color);
-    flex: 1 1 auto;
-    padding: .0625rem .4375rem .0625rem .5625rem;
-
 }
 .disc:hover{
     color: #74b9ff;
@@ -111,7 +107,10 @@ body{
     background: #ccc;
     overflow: hidden;
 }
-
+.disc .user-photo img {
+    width: 100%;
+    height: 100%;
+}
 .chat .user-photo {
     width: 60px;
     height: 60px;
@@ -172,7 +171,6 @@ textarea:focus{
 }
 button{
     border: 0;
-    background: transparent;
 }
 .menu{
     height: 15%;
@@ -282,149 +280,31 @@ a{
    .conversation {
        display: none;
    }
- }
- @media only screen and (min-width: 721px){
-#auth-pages .tabs-container:before,#auth-pages .tabs-container:after{
-    content:" ";
-    position:absolute;
-    width:100%;
-    left:-100%;
-    top:0;
-    right:0;
-    bottom:0;
-    background:#fff;
-    background:var(--surface-color);
-    z-index:1
-}
- #auth-pages .tabs-container:after{
-     left:100%
     }
-}
-/*# sourceMappingURL=style-desktop.9d7b485ed526720a3aad.css.map*/
- /*    @media screen and (max-width : 1400px ) {
-     .friend .identifier{
-        font-size: 15px;
-        position:relative;
-        margin-top: 10px;
-        left: 13%;
 
-      
-    }
-     
- }
- @media screen and (max-width : 1100px) {
+    @media screen and (max-width : 850px ) {
      .friend .identifier{
-         font-size: 15px;
-         position: relative;
-         left: 8%;
-     }
-     .self{
-        left: 35%;
-    }
-    .disc .user-photo {
-        width: 6%;
-       
-    }
-     .Disc{
-         display: none;
-     }
-     .conversation{
-         width: 100vw;
-     }
-     .text{
-        font-size: 15px;
-        left: 10px;
-        bottom: 10%;
-    }
-     .chatlogs{
-         width: 95%;
-     }
-     @media screen and (max-width: 800px){
-     .self {
-           left: 25%;
-    }
- }
-}
- @media  screen and (max-width : 500px) and (max-height : 950px) {
-    .disc{
-        margin: 15px 12px 25px 15px;
-    }
-    .time{
-        position: absolute;
-        right: 0;
-        font-size: 10px;
-    }
-    .friend .identifier {
-        width: 75%;
-        margin: 0 5px 10px 25px;
-        font-size: 15px;
-        max-width: 175px;
-        max-height: 55px;
-        overflow-y: hidden;
+        font-size: 12px;
+        position:relative;
+        margin-top: 5px;
+        max-width: 40%;
+        max-height: 100px;
         overflow-x: hidden;
+        scrollbar-width: none;
     }
-    .disc .user-photo {
-        left: 0;
-        margin-left: 5px;
-        width: 10%;
+    .friend .identifier::-webkit-scrollbar{
+        width: 0;
+    
     }
-    .name{
+    .friend .identifier .name {
         font-size: 15px;
     }
-    .Disc img{
-        height: 30px;
-        width: 30px;
-    }
-    .text{
-        font-size: 13px;
-        left: 14px;
-        bottom: 15%;
-    }
-    .text img{
-        width: 20px;
-        height: 20px;
-    }
-    .contacting {
-        top: 12%;
-    }
-    .contacting img {
-        margin-right: 5px;
-    }
-    .concern {
-        left: 5%;
-        top: 5%;
-        font-size: 11px;
-    }
-    .concern .imag{
-        height: 40px;
-        width: 80px;
-    }
-    .concern .imag img{
-        height: 100%;
-        width: 50%;
-    }
-    .self {
-        left: 17%;
-    }
-    .me_and {
-        margin-right: 10px;
-    }
-    .chatlogs{
-        height: 75vh;
-    }
-    .chat-form{
-    margin: 5px 20px 5px 20px;
-    height: 10vh;
-    }
-    .chat .user-photo {
-    width: 40px;
-    height: 40px;
-    }
-    .chat-form textarea{
-        font-size: 15px;
-    }
-    .chat .chat-message{
-        width: 55%;
-        font-size: 10px;
-    }
-} */
+    .friend .user-photo{
+         height: 50px;
+         width: 50px;
+     }
+     .friend .time{
+         font-size: 12px;
+         margin-left: 20px;
+     }
+ }

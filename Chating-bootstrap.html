@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="style1.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script type="text/javascript">
+     let resscreen = screen.width;
+        if(resscreen > 750 ){
+            document.getElementById("Disc").style.display = "block" ;
+            document.getElementById("conversation").style.display = "block";
+          }
+    </script>
 </head>
 
 <body>
@@ -44,91 +51,91 @@
                 </div>
             </div>
             <div class="text"><img src="images/+conversation.png" alt="HTML tutorial">
-                <scan class="txt  text-muted small">More conversation</scan>
+                <scan class="txt">More conversation</scan>
             </div>
         </div>
         <div class="d-flex flex-column discutes">
          
             <div class="d-flex flex-row  disc friend friend--onhover" onclick="myfunction()">
-                <div class="user-photo"><img class="img-fluid rounded-circle" src="images/boy1 (5).jpg"></div>
-                <p class=" text-muted small identifier">
+                <div class="user-photo"><img src="images/boy1 (5).jpg"></div>
+                <p class=" identifier">
                     <scan class="name"> Motika Randy </scan><br />
                     <scan class="message">This is an example of the youth discrete</scan>
                 </p>
-                <div class=" text-muted small ml-auto time">14:45</div>
+                <div class="ml-auto time">14:45</div>
             </div>
             <div class="d-flex flex-row disc friend friend--onhover">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (3).jpg"></div>
-                <p class=" text-muted small identifier">
+                <div class="user-photo"><img src="images/boy1 (3).jpg"></div>
+                <p class="identifier">
                     <scan class="name"> Tsembom Percy</scan> <br />
                     <scan class="message">You : nice that was awesaome </scan>
                 </p>
-                <scan class=" text-muted small ml-auto time">14:13</scan>
+                <scan class="ml-auto time">14:13</scan>
             </div>
             <div class="d-flex flex-row disc friend friend--onhover">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (7).jpg"></div>
-                <p class=" text-muted small identifier">
+                <div class="user-photo"><img src="images/boy1 (7).jpg"></div>
+                <p class="identifier">
                     <scan class="name"> Nganyou victor</scan> <br />
                     <scan class="message">You : how are you today my sweety lover</scan>
                 </p>
-                <scan class=" text-muted small ml-auto time">13:23</scan>
+                <scan class="ml-auto time">13:23</scan>
             </div>
             <div class="d-flex flex-row disc friend friend--onhover">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (8).jpg"></div>
-                <p class=" text-muted small identifier">
+                <div class="user-photo"><img src="images/boy1 (8).jpg"></div>
+                <p class="identifier">
                     <scan class="name"> Ndetis Elie</scan> <br />
                     <scan class="message">You were on a video call</scan>
                 </p>
-                <scan class=" text-muted small ml-auto time">Tues</scan>
+                <scan class="ml-auto time">Tues</scan>
             </div>
             <div class="d-flex flex-row disc friend friend--onhover">
                 <div class=" user-photo">
-                    <img  class="img-fluid rounded-circle" src="images/boy1 (4).jpg">
+                    <img src="images/boy1 (4).jpg">
                 </div>
-                <p class=" text-muted small identifier">
+                <p class="identifier">
                     <scan class="name">Tsembom chelcy</scan> <br />
                     <scan class="message">Thi is they reason you have to adapte this code <a
                             href="#">
                             https://www.w3schools.com/html/html_entities.asp </a></scan>
                 </p>
-                <scan class=" text-muted small time ml-auto">Wed</scan>
+                <scan class="time ml-auto">Wed</scan>
             </div>
             <div class="d-flex flex-row disc friend friend--onhover">
-                <div class="user-photo"><img   class="img-fluid rounded-circle" src="images/boy1 (6).jpg"></div>
-                <p class=" text-muted small identifier">
+                <div class="user-photo"><img src="images/boy1 (6).jpg"></div>
+                <p class="identifier">
                     <scan class="name"> Wandja Paul</scan> <br />
                     <scan class="message">You : how are you today my sweety lover</scan>
                 </p>
-                <scan class=" text-muted small ml-auto time">Wed</scan>
+                <scan class="ml-auto time">Wed</scan>
             </div>
             <div class="d-flex flex-row disc friend friend--onhover">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (1).jpg"></div>
-                <p class=" text-muted small identifier">
+                <div class="user-photo"><img src="images/boy1 (1).jpg"></div>
+                <p class="identifier">
                     <scan class="name"> Arthur Nguime</scan> <br />
                     <scan class="message">You were on a video call</scan>
                 </p>
-                <scan class=" text-muted small ml-auto time">thurs</scan>
+                <scan class="ml-auto time">thurs</scan>
             </div>
             <div class="d-flex flex-row disc friend friend--onhover">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (2).jpg"></div>
-                <p class=" text-muted small identifier">
+                <div class="user-photo"><img src="images/boy1 (2).jpg"></div>
+                <p class="identifier">
                     <scan class="name">Cassouh Ngatchou</scan> <br />
                     <scan class="message">Thi is they reason you have to adapte this code <a
                             href="#">
                             https://www.w3schools.com/html/html_entities.asp </a></scan>
                 </p>
-                <scan class=" text-muted small ml-auto time">Thurs</scan>
+                <scan class="ml-auto time">Thurs</scan>
             </div>
 
         </div>
     </div>
     <div class=" col-md-6  col-sm-12     conversation" id="conversation">
         <div class="Options no-gutters d-flex">
-         <img class="d-md-none" src="images/1200px-Back_Arrow.svg.png" alt="back" onclick="myfunction()" style="filter: invert(34%) sepia(34%) saturate(6765%) hue-rotate(241deg) brightness(98%) contrast(94%); width: 30px;height:40px; ">
+         <img class="visibility-md-hidden" src="images/1200px-Back_Arrow.svg.png" alt="back" onclick="myfunction()" style="filter: invert(34%) sepia(34%) saturate(6765%) hue-rotate(241deg) brightness(98%) contrast(94%); width: 30px;height:40px; ">
             <div class="justify-content-reverse concern">
                 <scan class="me_and">Motika,Ndetis</scan>
                 <div class="imag">
-                    <img  class="img-fluid rounded-circle" src="images/boy1 (2).jpg"><img   class="img-fluid rounded-circle" src="images/boy1 (3).jpg">
+                    <img src="images/boy1 (2).jpg"><img src="images/boy1 (3).jpg">
                 </div>
             </div>
             <div class="contacting">
@@ -145,13 +152,13 @@
         </div>
         <div class="chatlogs">
             <div class="chat friend">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (5).jpg"></div>
+                <div class="user-photo"><img src="images/boy1 (5).jpg"></div>
                 <p class="chat-message">prof,
                     i had some dificulties in the
                     the project. </p>
             </div>
             <div class="chat self">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (3).jpg"></div>
+                <div class="user-photo"><img src="images/boy1 (3).jpg"></div>
                 <p class="chat-message">Yes what is your issue ? Lorem ipsum dolor sit, amet consectetur adipisicing
                     elit. Quod consequuntur quam beatae voluptates maxime. Accusantium voluptatum officiis sunt. Sit
                     veniam libero totam quas nesciunt ad ipsam placeat, nam ratione vitae
@@ -160,14 +167,14 @@
                     voluptatem atque assumenda qui sed officia?.</p>
             </div>
             <div class="chat friend">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (5).jpg"></div>
+                <div class="user-photo"><img src="images/boy1 (5).jpg"></div>
                 <p class="chat-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptate deleniti delectus ut, voluptatum repellat, officia, tempora accusamus
                     animi necessitatibus totam nihil nulla quas vitae odio hic maiores saepe
                     exercitationem rem. </p>
             </div>
             <div class="chat self">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (3).jpg"></div>
+                <div class="user-photo"><img src="images/boy1 (3).jpg"></div>
                 <p class="chat-message">Yes what is your issue ? Lorem ipsum dolor sit, amet consectetur adipisicing
                     elit. Quod consequuntur quam beatae voluptates maxime. Accusantium voluptatum officiis sunt. Sit
                     veniam libero totam quas nesciunt ad ipsam placeat, nam ratione vitae
@@ -176,20 +183,20 @@
                     voluptatem atque assumenda qui sed officia?.</p>
             </div>
             <div class="chat friend">
-                <div class="user-photo"><img   class="img-fluid rounded-circle" src="images/boy1 (5).jpg"></div>
+                <div class="user-photo"><img src="images/boy1 (5).jpg"></div>
                 <p class="chat-message">prof,
                     i had some dificulties in the
                     the project. </p>
             </div>
             <div class="chat friend">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (5).jpg"></div>
+                <div class="user-photo"><img src="images/boy1 (5).jpg"></div>
                 <p class="chat-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptate deleniti delectus ut, voluptatum repellat, officia, tempora accusamus
                     animi necessitatibus totam nihil nulla quas vitae odio hic maiores saepe
                     exercitationem rem. </p>
             </div>
             <div class="chat self">
-                <div class="user-photo"><img  class="img-fluid rounded-circle" src="images/boy1 (3).jpg"></div>
+                <div class="user-photo"><img src="images/boy1 (3).jpg"></div>
                 <p class="chat-message">Yes what is your issue ? Lorem ipsum dolor sit, amet consectetur adipisicing
                     elit. Quod consequuntur quam beatae voluptates maxime. Accusantium voluptatum officiis sunt. Sit
                     veniam libero totam quas nesciunt ad ipsam placeat, nam ratione vitae
@@ -213,7 +220,7 @@
         </div>
 
     </div>
-</div>
+</div> 
 </div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script>
@@ -245,7 +252,22 @@
         $( '.chat' ).hide('slow').show('slow');
         
       });
+    while (document.getElementById("body")>>"750"){
+
+
+            myfunction();
+    }
 </script>
+<style>
+    @media only screen and (min-width: 750px){
+        .conversation{
+            display: block;
+        }
+        .Disc{
+            display: block;
+        }
+}
+</style>
     <!-- jQuery library -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 
