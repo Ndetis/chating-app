@@ -49,20 +49,20 @@ body{
 .Options{
     height: 10vh;
     width: 100%;
-    background: #f3f6ff;
+    /* background: #f3f6ff;
     display: flex;
-    position: relative;
+    position: relative; */
  
 }
 .menu .contacting{
     position: relative;
     top: 10%;
 }
-.Options .contacting{
+/* .Options .contacting{
     position: absolute;
     right: 0;
     top: 10%;
-}
+} */
 .chat{
     display: flex;
     flex-flow : row wrap;
@@ -121,8 +121,6 @@ body{
 }
 .chat .user-photo img {
     width: 100%;
-
-
 }
 .chat .chat-message{
     width: 50%;
@@ -138,7 +136,8 @@ body{
     background: blueviolet;
     color: #fff;
 }
-/* .friend{
+/*
+ .friend{
     position: relative;
     right: 0%;
 } */
@@ -229,18 +228,35 @@ a{
  }
  .concern{
     color: #ec3bde;
-    position: absolute;
+   /*  position: absolute;
     left: 30%;
-    top: 20px;
+    top: 20px; */
     font-weight: bold;
     display: flex;
+    font-size: 13px;
  }
- .imag img{
+ .imag {
     height:50px;
-    width:50px;
+    width:100px;
     border-radius: 50%;
-   
+    display: flex;
+    padding: 0;
+    margin: 0;
  }
+ .imag .avater{
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     border: 2px rgb(226, 70, 22) solid;
+     padding: 2px;
+     margin: 0;
+ 
+    }
+.imag .avater :after{
+    content: "";
+    padding-bottom: 100%;
+    display: block;
+}  
  .me_and{
     margin-right: 12px;
     margin-top: 15px;
